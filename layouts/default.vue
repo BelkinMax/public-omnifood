@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
 /* ---------------------------------- Basic --------------------------------- */
 * {
   margin: 0;
@@ -32,7 +34,7 @@ html,
 body {
   background-color: #fff;
   color: #555;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
   text-rendering: optimizeLegibility;
