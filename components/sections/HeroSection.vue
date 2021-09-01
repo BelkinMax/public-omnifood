@@ -3,15 +3,14 @@
     <div class="hero">
       <div class="hero-textbox">
         <h1 class="heading-primary">
-          A healthy meal delivered to your door, every single day
+          {{ heading }}
         </h1>
         <p class="hero-description">
-          The smart 365-days-per-year food subscription that will make you eat
-          healthy again. Tailored to your personal tastes and nutritional needs.
+          {{ description }}
         </p>
         <div class="cta-wrapper">
-          <a href="#" class="btn cta-main-btn">Start eating well</a>
-          <a href="#" class="btn cta-secondary-btn">Learn more &darr;</a>
+          <CtaBtn type="primary" content="Start eating well" to="#" />
+          <CtaBtn type="secondary" content="Learn more" to="#" />
         </div>
         <div class="customers">
           <div class="faces">
@@ -24,21 +23,32 @@
             />
           </div>
           <p class="delivered">
-            <span>250,000+</span> meals delivered last year!
+            <span>{{ delivered[0] }}</span> {{ delivered[1] }}
           </p>
         </div>
       </div>
       <div class="hero-imgbox">
-        <img class="hero-thumb" src="/resources/hero.jpg" alt="Food delivery" />
+        <img
+          class="hero-thumb"
+          src="/resources/hero.webp"
+          alt="Food delivery"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import CtaBtn from "@/components/elements/CtaBtn.vue";
+
 export default {
+  components: { CtaBtn },
   data() {
     return {
+      heading: "A healthy meal delivered to your door, every single day",
+      description:
+        "The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.",
+      delivered: ["250,000+", "meals delivered last year!"],
       customers: [
         { src: "/resources/customer-1.jpg", alt: "Customer photo" },
         { src: "/resources/customer-2.jpg", alt: "Customer photo" },
@@ -53,11 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$brand-color: #e67e22;
-$brand-color-dark: #cf711f;
-$h1-color: #333;
-$link-text-color: #555;
-$hero-bg: #fdf2e9;
+@import "@/assets/scss/colors.scss";
 
 .hero-wrapper {
   background-color: $hero-bg;
@@ -94,46 +100,6 @@ $hero-bg: #fdf2e9;
 
         *:not(:last-child) {
           margin-right: 1.6rem;
-        }
-
-        .btn {
-          transition: background-color 0.3s;
-          font-weight: 600;
-
-          &:link,
-          &:visited {
-            display: inline-block;
-            font-size: 2rem;
-            border-radius: 9px;
-            text-decoration: none;
-
-            padding: 1.6rem 3.2rem;
-          }
-        }
-
-        .cta-main-btn {
-          &:link,
-          &:visited {
-            background-color: $brand-color;
-            color: white;
-          }
-          &:hover,
-          &:active {
-            background-color: $brand-color-dark;
-          }
-        }
-
-        .cta-secondary-btn {
-          &:link,
-          &:visited {
-            background-color: white;
-            color: $link-text-color;
-            box-shadow: inset 0 0 0 3px white;
-          }
-          &:hover,
-          &:active {
-            background-color: transparent;
-          }
         }
       }
 
