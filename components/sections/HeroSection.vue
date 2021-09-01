@@ -67,11 +67,12 @@ export default {
 
 .hero-wrapper {
   background-color: $hero-bg;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 0.6rem 0;
 
   .hero {
     max-width: 130rem;
     margin: 0 auto;
+    padding: 0 3.2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
