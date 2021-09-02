@@ -69,7 +69,7 @@ export default {
 
 .hero-wrapper {
   background-color: $hero-bg;
-  padding: 4.8rem 0 0.6rem 0;
+  padding: 4.8rem 0 8.6rem 0;
 
   .hero {
     max-width: 130rem;
@@ -81,16 +81,6 @@ export default {
     gap: 9.6rem;
 
     &-textbox {
-      .heading-primary {
-        font-size: 5.2rem;
-        font-weight: 700;
-        line-height: 1.05;
-        color: $text-color;
-        letter-spacing: -0.5px;
-
-        margin-bottom: 3.2rem;
-      }
-
       .hero-description {
         font-size: 2rem;
         line-height: 1.6;
