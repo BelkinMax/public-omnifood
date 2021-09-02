@@ -128,17 +128,17 @@ export default {
       z-index: 10;
     }
   }
-}
 
-.step-number {
-  color: #ddd;
-  font-size: 9.8rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
-}
+  .step-number {
+    color: #ddd;
+    font-size: 9.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
 
-.step-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
 }
 </style>

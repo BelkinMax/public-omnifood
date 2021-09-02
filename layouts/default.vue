@@ -85,7 +85,7 @@ body {
 }
 
 .subheading {
-  color: $primary-color-dark;
+  color: $brand-color-dark;
   display: block;
   font-size: 2rem;
   font-weight: 500;
