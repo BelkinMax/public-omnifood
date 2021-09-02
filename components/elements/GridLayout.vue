@@ -27,8 +27,9 @@ export default {
 }
 
 .grid {
+  column-gap: 6.4rem;
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
   padding: 0 3.2rem;
 }
 </style>
