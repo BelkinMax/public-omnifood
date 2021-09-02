@@ -93,4 +93,22 @@ body {
   margin-bottom: 1.6rem;
   text-transform: uppercase;
 }
+
+.link {
+  &:link,
+  &:visited {
+    border-bottom: 1px solid currentColor;
+    color: $brand-color;
+    display: inline-block;
+    padding-bottom: 2px;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom: 1px solid transparent;
+    color: $brand-color-dark;
+  }
+}
 </style>
