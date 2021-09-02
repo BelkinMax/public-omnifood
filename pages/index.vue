@@ -1,7 +1,14 @@
 <template>
-  <div></div>
+  <div>
+    <HowItWorksSection />
+  </div>
 </template>
 
 <script>
-export default {};
+import HowItWorksSection from "@/components/sections/HowItWorksSection.vue";
+export default {
+  components: {
+    HowItWorksSection
+  }
+};
 </script>
