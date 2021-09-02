@@ -9,8 +9,8 @@
           {{ description }}
         </p>
         <div class="cta-wrapper">
-          <CtaBtn type="primary" content="Start eating well" to="#" />
-          <CtaBtn type="secondary" content="Learn more" to="#" />
+          <CtaBtn type="primary" content="Start eating well" />
+          <CtaBtn type="secondary" content="Learn more" />
         </div>
         <div class="customers">
           <div class="faces">
@@ -42,7 +42,9 @@
 import CtaBtn from "@/components/elements/CtaBtn.vue";
 
 export default {
-  components: { CtaBtn },
+  components: {
+    CtaBtn
+  },
   data() {
     return {
       heading: "A healthy meal delivered to your door, every single day",
@@ -67,11 +69,12 @@ export default {
 
 .hero-wrapper {
   background-color: $hero-bg;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 0.6rem 0;
 
   .hero {
     max-width: 130rem;
     margin: 0 auto;
+    padding: 0 3.2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -82,7 +85,7 @@ export default {
         font-size: 5.2rem;
         font-weight: 700;
         line-height: 1.05;
-        color: $h1-color;
+        color: $text-color;
         letter-spacing: -0.5px;
 
         margin-bottom: 3.2rem;

@@ -1,5 +1,5 @@
 <template>
-  <a :href="to" class="btn" :class="btnType">{{ content }}</a>
+  <a :href="to" class="btn" :class="custom">{{ content }}</a>
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
       type: String,
       required: false,
       default: "main"
+    },
+    size: {
+      type: String,
+      required: false,
+      default: "lg"
     },
     content: {
       type: String,
@@ -21,8 +26,8 @@ export default {
     }
   },
   computed: {
-    btnType() {
-      return `cta-${this.type}-btn`;
+    custom() {
+      return `cta-${this.type}-btn btn-${this.size}`;
     }
   }
 };
@@ -32,17 +37,21 @@ export default {
 @import "@/assets/scss/colors.scss";
 
 .btn {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
   transition: background-color 0.3s;
-  font-weight: 600;
 
-  &:link,
-  &:visited {
-    display: inline-block;
-    font-size: 2rem;
-    border-radius: 9px;
-    text-decoration: none;
-
+  &-lg {
     padding: 1.6rem 3.2rem;
+    font-weight: 600;
+    border-radius: 9px;
+  }
+
+  &-md {
+    padding: 1.2rem 2.4rem;
+    font-weight: 500;
+    border-radius: 7px;
   }
 }
 

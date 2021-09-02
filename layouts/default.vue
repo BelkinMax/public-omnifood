@@ -1,5 +1,6 @@
 <template>
   <section>
+    <HeaderSection />
     <HeroSection />
     <main>
       <Nuxt />
@@ -9,9 +10,12 @@
 
 <script>
 import HeroSection from "@/components/sections/HeroSection.vue";
+import HeaderSection from "@/components/sections/HeaderSection.vue";
+
 export default {
   components: {
-    HeroSection
+    HeroSection,
+    HeaderSection
   }
 };
 </script>
