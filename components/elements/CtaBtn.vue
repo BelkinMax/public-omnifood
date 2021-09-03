@@ -71,7 +71,7 @@ export default {
   &:link,
   &:visited {
     background-color: white;
-    color: $link-text-color;
+    color: $text-color-link;
     box-shadow: inset 0 0 0 3px white;
   }
   &:hover,

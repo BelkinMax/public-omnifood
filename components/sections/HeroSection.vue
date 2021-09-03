@@ -68,7 +68,7 @@ export default {
 @import "@/assets/scss/colors.scss";
 
 .hero-wrapper {
-  background-color: $hero-bg;
+  background-color: $bg-colr-hero;
   padding: 4.8rem 0 8.6rem 0;
 
   .hero {
@@ -108,7 +108,7 @@ export default {
             height: 4.8rem;
             aspect-ratio: 1;
             border-radius: 50%;
-            border: 3px solid $hero-bg;
+            border: 3px solid $bg-colr-hero;
 
             &:not(:first-child) {
               margin-left: -1.6rem;

@@ -363,7 +363,7 @@ export default {
 
 .tag {
   border-radius: 100px;
-  color: $greys-dark;
+  color: $gray-700;
   display: inline-block;
   font-size: 1.2rem;
   padding: 0.4rem 0.8rem;
@@ -383,7 +383,7 @@ export default {
 }
 
 .meal-title {
-  color: $greys-dark;
+  color: $gray-700;
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 3.2rem;

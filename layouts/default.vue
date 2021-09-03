@@ -2,9 +2,7 @@
   <section>
     <HeaderSection />
     <HeroSection />
-    <main>
-      <Nuxt />
-    </main>
+    <Nuxt />
   </section>
 </template>
 
@@ -22,7 +20,9 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
 @import "@/assets/scss/colors.scss";
+@import "@/assets/scss/typography.scss";
 
 /* ---------------------------------- Basic --------------------------------- */
 * {
@@ -37,11 +37,11 @@ html {
 
 html,
 body {
-  background-color: #fff;
-  color: #555;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  line-height: 1;
+  background-color: $bg-color-main;
+  color: $text-color-main;
+  font-family: $tp-font-family-main;
+  font-weight: $tp-font-weight-main;
+  line-height: $tp-line-height-main;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -58,10 +58,11 @@ body {
   visibility: hidden;
 }
 
+/* ------------------------------- Typography ------------------------------- */
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  color: #333;
+  color: $text-color-main;
   font-weight: 700;
   letter-spacing: -0.5px;
 }

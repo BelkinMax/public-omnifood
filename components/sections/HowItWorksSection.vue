@@ -111,13 +111,13 @@ export default {
     }
 
     &::before {
-      background-color: $tint;
+      background-color: $tint-light;
       padding-bottom: 60%;
       width: 60%;
     }
 
     &::after {
-      background-color: $tint-darker;
+      background-color: $tint-dark;
       padding-bottom: 45%;
       width: 45%;
     }

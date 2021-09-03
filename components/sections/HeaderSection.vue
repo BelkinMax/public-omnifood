@@ -57,7 +57,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 9.6rem;
-  background-color: $hero-bg;
+  background-color: $bg-colr-hero;
   padding: 0 4.8rem;
 
   .logo {
@@ -77,7 +77,7 @@ export default {
         &:link,
         &:visited {
           text-decoration: none;
-          color: $text-color;
+          color: $text-color-main;
           font-weight: 500;
           font-size: 1.8rem;
         }
